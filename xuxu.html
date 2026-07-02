@@ -8,6 +8,8 @@
 
   <body>
     <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+
+    <p>Objetos em JavaScript são estruturas que agrupam dados e funções em uma mesma unidade, permitindo organizar informações de forma mais clara e reutilizável.</p>
     
     <script>
        var pessoa = {
@@ -32,6 +34,26 @@
   saudacao: function () {
     alert("Oi! Eu sou " + this.nome[0] + ".");
   },
+};
+var cachorro = {
+  nome: "Rex",
+  raca: "Labrador",
+  idade: 4,
+  cor: "caramelo",
+  brinquedos_favoritos: ["bolinha", "osso de borracha"],
+  
+  latir: function () {
+    alert(
+      this.nome + 
+      " é um " + 
+      this.raca + 
+      " de " + 
+      this.idade + 
+      " anos que adora brincar com sua " + 
+      this.brinquedos_favoritos[0] + 
+      "! Au au!"
+    );
+  }
 };
     </script>
   </body>
